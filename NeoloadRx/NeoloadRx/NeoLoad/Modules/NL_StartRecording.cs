@@ -27,13 +27,7 @@ namespace NeoloadDesignTest.NeoloadDesignLib
             get { return _userPath; }
             set { _userPath = value; }
         }
-
-        [TestVariable("29B0EB4D-D82E-4DDA-8ABB-355734B346D2")]
-        public string Interval { get; set; }
-
-        [TestVariable("7E6AAB81-CA2F-4084-A2B2-C0B8792122A1")]
-        public string Timeout { get; set; }
-
+        
         string _updateUserPath = "true";
         [TestVariable("8a8f3b2c-1b8e-458b-b5aa-a91e0042e99a")]
         public string updateUserPath
@@ -41,6 +35,20 @@ namespace NeoloadDesignTest.NeoloadDesignLib
             get { return _updateUserPath; }
             set { _updateUserPath = value; }
         }
+
+        [TestVariable("29B0EB4D-D82E-4DDA-8ABB-355734B346D2")]
+        public string Interval { get; set; }
+
+        [TestVariable("7E6AAB81-CA2F-4084-A2B2-C0B8792122A1")]
+        public string Timeout { get; set; }
+
+        string _userAgentString = "";
+		[TestVariable("ecfc6410-9ba8-4352-bbbe-b370b0391967")]
+		public string userAgentString
+		{
+			get { return _userAgentString; }
+			set { _userAgentString = value; }
+		}
 
         /// <summary>
         /// Constructs a new instance.
